@@ -31,19 +31,19 @@ plot4 <- function(){
 	par(mfrow = c(2,2))
 
 	# plot 1-1
-	plot(data$Date, data$Global_active_power, ylab = "Global active power (kilowatts)", xlab = "", type = "l")
+	plot(data$Date, data$Global_active_power, ylab = "Global active power (kilowatt)", xlab = "", type = "l")
 
 	# plot 1-2
-	plot(data$Date, data$Voltage, ylab = "Voltage", xlab = "", type = "l")
+	plot(data$Date, data$Voltage, ylab = "Voltage (volt)", xlab = "", type = "l")
 
 	# plot 2-1
-	plot(data$Date, data$Sub_metering_1, ylab = "Energy sub metering", xlab = "", type = "l")
+	plot(data$Date, data$Sub_metering_1, ylab = "Energy sub metering (watt-hour)", xlab = "", type = "l")
 	points(data$Date, data$Sub_metering_2, type = "l", col = "red")
 	points(data$Date, data$Sub_metering_3, type = "l", col = "blue")
 	legend("topright", bty = "n", legend = c("Sub metering 1", "Sub metering 2", "Sub metering 3"), lty=1,  col = c("black", "red", "blue"))
 
 	# plot 2-2
-	plot(data$Date, data$Global_reactive_power, ylab = "Global reactive power (kilowatts)", xlab = "", type = "l")
+	plot(data$Date, data$Global_reactive_power, ylab = "Global reactive power (kilowatt)", xlab = "", type = "l")
 
 
 	dev.off()

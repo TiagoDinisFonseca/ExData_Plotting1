@@ -28,7 +28,7 @@ plot3 <- function(){
 
 	# create the plot	
 	png('plot3.png', width = 480, height = 480)
-	plot(data$Date, data$Sub_metering_1, ylab = "Energy sub metering", xlab = "", type = "l")
+	plot(data$Date, data$Sub_metering_1, ylab = "Energy sub metering (watt-hour)", xlab = "", type = "l")
 	points(data$Date, data$Sub_metering_2, type = "l", col = "red")
 	points(data$Date, data$Sub_metering_3, type = "l", col = "blue")
 	legend("topright", legend = c("Sub metering 1", "Sub metering 2", "Sub metering 3"), lty=1,  col = c("black", "red", "blue"))

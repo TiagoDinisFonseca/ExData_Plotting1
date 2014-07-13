@@ -28,7 +28,7 @@ plot2 <- function(){
 
 	# create the plot	
 	png('plot2.png', width = 480, height = 480)
-	plot(data$Date, data$Global_active_power, ylab = "Global active power (kilowatts)", xlab = "", type = "l")
+	plot(data$Date, data$Global_active_power, ylab = "Global active power (kilowatt)", xlab = "", type = "l")
 	dev.off()
 
 	# finish	
